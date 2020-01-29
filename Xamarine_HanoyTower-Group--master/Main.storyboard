@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="235" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="295" y="353" width="40" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <constraints>
+                                    <constraint id="2565" firstAttribute="width" constant="40"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="StartButton_Tapped:" destination="BYZ-38-t0r" id="9831" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="236" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="42" y="353" width="100" height="30"/>
+                                <state key="normal" title="Start Tutorial"/>
+                                <constraints>
+                                    <constraint id="3882" firstAttribute="width" constant="100"/>
+                                </constraints>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="2191" translatesAutoresizingMaskIntoConstraints="NO" text="3">
+                                <rect key="frame" x="191" y="351" width="50" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="3149" firstAttribute="width" constant="50"/>
+                                </constraints>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint id="2397" firstItem="236" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="333"/>
+                            <constraint id="2437" firstItem="236" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22"/>
+                            <constraint id="2442" firstItem="2191" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="331"/>
+                            <constraint id="2528" firstItem="235" firstAttribute="leading" secondItem="2191" secondAttribute="trailing" constant="54"/>
+                            <constraint id="2529" firstItem="235" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="333"/>
+                            <constraint id="2530" firstAttribute="trailingMargin" secondItem="235" secondAttribute="trailing" constant="59"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="StartButton" destination="235" id="name-outlet-235"/>
+                        <outlet property="_txtFildAmountTower" destination="2191" id="name-outlet-2191"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <scene sceneID="229">
+            <objects>
+                <viewController id="230" sceneMemberID="viewController" customClass="TowerView" storyboardIdentifier="_towerView">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="227"/>
+                        <viewControllerLayoutGuide type="bottom" id="228"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="231">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="4569" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="25" y="25" width="364" height="705"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5251" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" tag="1">
+                                        <rect key="frame" x="16" y="660" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Start"/>
+                                        <connections>
+                                            <action selector="StartButton_Tapped:" destination="230" id="5490" eventType="touchUpInside"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5252" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" tag="1">
+                                        <rect key="frame" x="93" y="660" width="63" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Pause"/>
+                                        <connections>
+                                            <action selector="PauseButton_Tapped:" destination="230" id="5491" eventType="touchUpInside"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5253" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" tag="1">
+                                        <rect key="frame" x="196" y="660" width="57" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Stop"/>
+                                        <connections>
+                                            <action selector="StopButton_Tapped:" destination="230" id="5492" eventType="touchUpInside"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="14606" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" tag="0.0">
+                                        <rect key="frame" x="283" y="660" width="64" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Reverse"/>
+                                        <connections>
+                                            <action selector="ReverseButton_Tapped:" destination="230" id="14607" eventType="touchUpInside"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint id="4570" firstItem="4569" firstAttribute="top" secondItem="227" secondAttribute="bottom" constant="5"/>
+                            <constraint id="4571" firstItem="4569" firstAttribute="leading" secondItem="231" secondAttribute="leadingMargin" constant="5"/>
+                            <constraint id="4572" firstAttribute="trailingMargin" secondItem="4569" secondAttribute="trailing" constant="5"/>
+                            <constraint id="4573" firstItem="228" firstAttribute="top" secondItem="4569" secondAttribute="bottom" constant="5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="_viewForTowers" destination="4569" id="name-outlet-4569"/>
+                        <outlet property="StartButton" destination="5251" id="name-outlet-5251"/>
+                        <outlet property="PauseButton" destination="5252" id="name-outlet-5252"/>
+                        <outlet property="StopButton" destination="5253" id="name-outlet-5253"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="232" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="501" y="-1"/>
+        </scene>
+    </scenes>
+</document>
